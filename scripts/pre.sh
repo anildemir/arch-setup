@@ -11,6 +11,8 @@
 
 # # # # #
 
+set -e
+
 if ! [ $# -eq 3 ]; then
     echo "Please provide BOOT, SWAP and ROOT partitions."
     exit 1

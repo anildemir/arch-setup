@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 hwclock --systohc
 locale-gen
@@ -7,7 +9,7 @@ echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 echo 'KEYMAP=us' > /etc/vconsole.conf
 echo 'testhostname' > /etc/hostname
 mkinitcpio -P
-passwd
+# passwd
 
 if ! [ -d /sys/firmware/efi ]
 then
