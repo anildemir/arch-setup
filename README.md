@@ -1,1 +1,1 @@
-# arch-setup
+# Arch Setup

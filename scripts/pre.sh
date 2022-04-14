@@ -42,6 +42,8 @@ mkswap $SWAP
 swapon $SWAP
 mkfs.ext4 $ROOT
 
+e2label $ROOT arch_os
+
 mount $ROOT /mnt
 mount --mkdir $BOOT /mnt/boot
 
