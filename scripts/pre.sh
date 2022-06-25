@@ -49,5 +49,5 @@ e2label $ROOT arch_os
 mount $ROOT /mnt
 mount --mkdir $BOOT /mnt/boot
 
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt - < packages
 genfstab -U /mnt >> /mnt/etc/fstab
